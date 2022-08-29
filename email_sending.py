@@ -1,4 +1,4 @@
-# smtplib module is necessary to create a server to send the email
+# smtplib module is necessary to create a server to send the email.
 
 import smtplib
 from email.message import EmailMessage
@@ -11,7 +11,7 @@ html = Template(Path('index.html').read_text())
 
 email = EmailMessage()
 email['from'] = 'Vignesh Jayaraman'
-email['to'] = "receiver emailid"
+email['to'] = "receiver's email_id"
 email['subject'] = 'Greetings'
 
 email.set_content(html.substitute({'name' : "Vignesh"}),'html')
